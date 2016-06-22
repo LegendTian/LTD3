@@ -1,0 +1,209 @@
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>力导向图</title>
+</head>
+
+<style>
+
+    .link {
+        fill: none;
+        stroke: #ccc;
+        stroke-width: 1.5px;
+    }
+</style>
+<body>
+<script src="js/d3.min.js" charset="utf-8"></script>
+<script>
+
+    var nodes = [ { name: "桂林"    }, { name: "广州" },
+        { name: "厦门"    }, { name: "杭州"   },
+        { name: "上海"   }, { name: "青岛"    },
+        { name: "天津"    } ];
+
+    var edges = [  { source : 0  , target: 1 } , { source : 0  , target: 2 } ,
+        { source : 0  , target: 3 }  ];
+
+    var width = 600;
+    var height = 500;
+
+    var svg = d3.select("body")
+            .append("svg")
+            .attr("width",width)
+            .attr("height",height);
+
+    var force = d3.layout.force()
+            .nodes(nodes)		//指定节点数组
+            .links(edges)		//指定连线数组
+            .size([width,height])	//指定范围
+            .linkDistance(150)	//指定连线长度
+            .charge(-400);	//相互之间的作用力
+
+    force.start();	//开始作用*/
+
+
+
+    var hhhy;
+    var hhhx;
+function go() {
+   force.on("tick",function(d){
+
+   })
+
+    var tree = d3.layout.tree()
+            .size([600, 500])
+            .children(function (d) {
+                return d;
+            })
+    debugger;
+    tree.nodes(nodes);
+    nodes.push({"name":"全网云"})
+    svg_edges.transition().duration(2000).attr("x1",function(d,i){
+        if(d.source.name=="桂林"){
+            return   d.source.parent.x
+        }else{
+            return d.source.x
+        }
+    }).attr("y1",function(d,i){
+        return  d.source.parent.y+50
+    }).attr("x2",function(d,i){
+        return d.target.x
+    }).attr("y2",function(d,i){
+        return d.target.y-50
+    })
+    var hhhy;
+    var hhhx;
+    svg_nodes.data(nodes).transition().duration(2000).attr("transform", function(d,i) {  debugger;  d.fixed=true;
+        if(d.name=="桂林"){
+            hhhy=d.parent.y- d.py+50;
+            hhhx=d.parent.x- d.px
+            console.log(hhhx,hhhy)
+            return "translate(" + (d.parent.x- d.px) + "," + (d.parent.y- d.py+50)+ ")";
+        }else{
+            return "translate(" + (d.x- d.px) + "," + (d.y- d.py-50)+ ")";
+        }
+    })
+    /*nodes.forEach(function(d){
+        if(d.name=="桂林"){
+            d.x= d.parent.x+hhhx
+            d.y= d.parent.y+hhhy
+            d.px= d.parent.x;
+            d.py= d.parent.y+50;
+        }
+    });*/
+    var drag = d3.behavior.drag().on("drag", callback);
+    function callback(d) {
+
+        var name = d.name ;
+
+        var x = d3.event.x;
+                y = d3.event.y;
+
+
+        d3.select(this).attr("cx",function(d){
+            return x-hhhx;
+        }).attr("cy",function(d){
+            return y-hhhy;
+        })
+
+        //选取节点移动
+         var node = d3.selectAll(".node")
+         .filter(function(d){return d.name === name})
+         .attr("transform", function(d) {  return "translate(" + (x-20) + "," + (y-20) + ")"; })
+         ;
+        //关联连线移动
+        var link_source = d3.selectAll(".link")
+                .filter(function(d){return d.source.name === name})
+                .attr("x1", function (d) {  return x; })
+                .attr("y1", function (d) {return y;})
+                ;
+
+        var link_target = d3.selectAll(".link")
+                .filter(function(d){return d.target.name === name})
+                .attr("x2", function (d) {return x;})
+                .attr("y2", function (d) {return y ;});
+
+        //    d3.selectAll(".link").attr("class", "link1");
+
+    }
+    svg_nodes.call(drag)
+
+
+}
+
+
+
+     //添加连线
+     var svg_edges = svg.selectAll("line")
+             .data(edges)
+             .enter()
+             .append("line")
+             .attr("class", "link")
+             //.attr("d", diagonal)
+
+     var color = d3.scale.category20();
+
+     //添加节点
+     var svg_nodes = svg.selectAll("circle")
+             .data(nodes)
+             .enter()
+             .append("circle")
+             .attr("r", 20)
+             .style("fill", function (d, i) {
+                 return color(i);
+             })
+            // .attr("transform", function(d) { return "translate(" + d.x + "," + (d.y+50) + ")"; })
+             .call(force.drag);	//使得节点能够拖动
+
+     //添加描述节点的文字
+     var svg_texts = svg.selectAll("text")
+             .data(nodes)
+             .enter()
+             .append("text")
+             .style("fill", "black")
+             .attr("dx", 20)
+             .attr("dy", 8)
+             .text(function (d) {
+                 return d.name;
+             });
+
+
+       force.on("tick", function () {	//对于每一个时间间隔
+
+           //更新连线坐标
+           svg_edges.attr("x1", function (d) {
+                       return d.source.x;
+                   })
+                   .attr("y1", function (d) {
+                       return d.source.y;
+                   })
+                   .attr("x2", function (d) {
+                       return d.target.x;
+                   })
+                   .attr("y2", function (d) {
+                       return d.target.y;
+                   });
+
+           //更新节点坐标
+           svg_nodes.attr("cx", function (d) {
+                       return d.x;
+                   })
+                   .attr("cy", function (d) {
+                       return d.y;
+                   });
+
+           //更新文字坐标
+           svg_texts.attr("x", function (d) {
+                       return d.x;
+                   })
+                   .attr("y", function (d) {
+                       return d.y;
+                   });
+       });
+
+</script>
+
+</body>
+<button onclick="go()">ssss</button>
+</html>  
