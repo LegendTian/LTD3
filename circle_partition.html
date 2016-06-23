@@ -12,8 +12,8 @@
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
 
-    var width = 450,
-            height = 450,
+    var width = 600,
+            height = 600,
             radius =  Math.min(width, height) / 2 ,
             color = d3.scale.category20();
 
@@ -35,7 +35,7 @@
             .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); });
 
 
-    d3.json("data/city_tree.json", function(error, root) {
+    d3.json("data/lineloop.json", function(error, root) {
 
         if(error)
             console.log(error);
