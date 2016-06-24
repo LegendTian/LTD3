@@ -12,8 +12,8 @@
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
 
-    var width = 600,
-            height = 600,
+    var width = 800,
+            height = 800,
             radius =  Math.min(width, height) / 2 ,
             color = d3.scale.category20();
 
@@ -81,9 +81,9 @@
                     //其他的元素，既平移也旋转
                     var r = 0;
                     if( (d.x+d.dx/2)/Math.PI*180 < 180 )  // 0 - 180 度以内的
-                        r = 180 * ((d.x + d.dx / 2 - Math.PI / 2) / Math.PI);
+                        r = 180 * ((d.x + d.dx / 2 - Math.PI ) / Math.PI);
                     else  // 180 - 360 度以内的
-                        r = 180 * ((d.x + d.dx / 2 + Math.PI / 2) / Math.PI);
+                        r = 180 * ((d.x + d.dx / 2 + Math.PI ) / Math.PI);
 
                     //既平移也旋转
                     return  "translate(" + arc.centroid(d) + ")" +

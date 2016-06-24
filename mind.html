@@ -36,7 +36,7 @@
     var height = 600;
 
     //边界空白
-    var padding = {left: 80, right:50, top: 20, bottom: 20 };
+    var padding = {left: 100, right:50, top: 20, bottom: 20 };
 
     var svg = d3.select("body")
             .append("svg")
@@ -47,7 +47,13 @@
 
     //树状图布局
     var tree = d3.layout.tree()
-            .size([height, width]);
+            .size([height, width])
+            .separation(function(a,b){
+                //return a.parent == b.parent ? "兄弟节点间隔" : 父子节点间隔;
+                console.log(a,b);
+                return a.parent == b.parent ? 1 : 1;
+                //return (a.parent == b.parent ? 1 : 2) / a.depth;
+            });
 
     //对角线生成器
     var diagonal = d3.svg.diagonal()
