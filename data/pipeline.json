@@ -1,0 +1,1213 @@
+﻿[
+  [
+    {
+      "id": "40288031528086450152811b5ef20002",
+      "type": "point",
+      "name": "山西天然气管网",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152811b5ef20002",
+      "endPid": "40288082531b1f7201531ba5389a0071"
+    },
+    {
+      "id": "40288082531b1f7201531ba5389a0071",
+      "type": "point",
+      "name": "西气东输",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288082531b1f7201531ba5389a0071",
+      "endPid": "40288082531b1f7201531badc9240076"
+    },
+    {
+      "id": "40288082531b1f7201531badc9240076",
+      "type": "point",
+      "name": "临汾首站",
+      "pointType": "site",
+      "address": "临汾市"
+    }
+  ],
+  [
+    {
+      "id": "40288031528086450152811b5ef20002",
+      "type": "point",
+      "name": "山西天然气管网",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152811b5ef20002",
+      "endPid": "40288031528086450152813a39f30003"
+    },
+    {
+      "id": "40288031528086450152813a39f30003",
+      "type": "point",
+      "name": "陕京一线",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152813a39f30003",
+      "endPid": "40288031527b7ad401527bc1d9b5000c"
+    },
+    {
+      "id": "40288031527b7ad401527bc1d9b5000c",
+      "type": "point",
+      "name": "金沙滩首站",
+      "pointType": "site",
+      "address": "金沙滩"
+    },
+    {
+      "type": "line",
+      "name": "金沙滩怀仁",
+      "startPid": "40288031527b7ad401527bc1d9b5000c",
+      "endPid": "40288031527cd51801527cd88de80001",
+      "piplength": "12"
+    },
+    {
+      "id": "40288031527cd51801527cd88de80001",
+      "type": "point",
+      "name": "怀仁阀室",
+      "pointType": "site",
+      "address": "金沙滩"
+    },
+    {
+      "type": "line",
+      "name": "怀仁秀女河",
+      "startPid": "40288031527cd51801527cd88de80001",
+      "endPid": "40288031527cd51801527cd96cf00002",
+      "piplength": "12"
+    },
+    {
+      "id": "40288031527cd51801527cd96cf00002",
+      "type": "point",
+      "name": "秀女河阀室",
+      "pointType": "site",
+      "address": "怀仁",
+      "downStreams": [
+        {
+          "id": "4028803152a567860152a57c198a0003",
+          "type": "point",
+          "name": "秀女A",
+          "pointType": "user",
+          "address": "秀女",
+          "telephone": "12233",
+          "contact": "电放费"
+        }
+      ]
+    },
+    {
+      "type": "line",
+      "name": "秀女河大同",
+      "startPid": "40288031527cd51801527cd96cf00002",
+      "endPid": "40288031527cd51801527cda1a830003",
+      "piplength": "11"
+    },
+    {
+      "id": "40288031527cd51801527cda1a830003",
+      "type": "point",
+      "name": "大同分输站",
+      "pointType": "site",
+      "address": "秀女河",
+      "downStreams": [
+        {
+          "id": "4028803152a495e50152a50467340002",
+          "type": "point",
+          "name": "大同城网",
+          "pointType": "user",
+          "address": "大同",
+          "telephone": "129999",
+          "contact": "常晨"
+        },
+        {
+          "id": "4028803152a567860152a57a9e260001",
+          "type": "point",
+          "name": "大同发电",
+          "pointType": "user",
+          "address": "dat",
+          "telephone": "123",
+          "contact": "调度"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": "40288031528086450152811b5ef20002",
+      "type": "point",
+      "name": "山西天然气管网",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152811b5ef20002",
+      "endPid": "40288031528086450152813a39f30003"
+    },
+    {
+      "id": "40288031528086450152813a39f30003",
+      "type": "point",
+      "name": "陕京一线",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152813a39f30003",
+      "endPid": "40288031527b7ad401527bc1d9b5000c"
+    },
+    {
+      "id": "40288031527b7ad401527bc1d9b5000c",
+      "type": "point",
+      "name": "金沙滩首站",
+      "pointType": "site",
+      "address": "金沙滩"
+    },
+    {
+      "type": "line",
+      "name": "金沙滩怀仁",
+      "startPid": "40288031527b7ad401527bc1d9b5000c",
+      "endPid": "40288031527cd51801527cd88de80001",
+      "piplength": "11"
+    },
+    {
+      "id": "40288031527cd51801527cd88de80001",
+      "type": "point",
+      "name": "怀仁阀室",
+      "pointType": "site",
+      "address": "金沙滩"
+    },
+    {
+      "type": "line",
+      "name": "怀仁阀室怀仁分输",
+      "startPid": "40288031527cd51801527cd88de80001",
+      "endPid": "40288031527cd51801527cdb88590004",
+      "piplength": "11"
+    },
+    {
+      "id": "40288031527cd51801527cdb88590004",
+      "type": "point",
+      "name": "怀仁分输站",
+      "pointType": "site",
+      "address": "怀仁",
+      "downStreams": [
+        {
+          "id": "4028803152a567860152a5ab1bfd0009",
+          "type": "point",
+          "name": "怀仁城网",
+          "pointType": "user",
+          "address": "怀仁",
+          "telephone": "1221",
+          "contact": "积极"
+        }
+      ]
+    },
+    {
+      "type": "line",
+      "name": "怀仁分输怀仁门站",
+      "startPid": "40288031527cd51801527cdb88590004",
+      "endPid": "40288031527cd51801527cdc5dff0005",
+      "piplength": "11"
+    },
+    {
+      "id": "40288031527cd51801527cdc5dff0005",
+      "type": "point",
+      "name": "怀仁门站",
+      "pointType": "site",
+      "address": "怀仁",
+      "downStreams": [
+        {
+          "id": "4028803152a567860152a5afc4cd000d",
+          "type": "point",
+          "name": "怀仁供暖",
+          "pointType": "user",
+          "address": "怀仁",
+          "telephone": "9888",
+          "contact": "啦啦啦"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": "40288031528086450152811b5ef20002",
+      "type": "point",
+      "name": "山西天然气管网",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152811b5ef20002",
+      "endPid": "40288031528086450152813a39f30003"
+    },
+    {
+      "id": "40288031528086450152813a39f30003",
+      "type": "point",
+      "name": "陕京一线",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152813a39f30003",
+      "endPid": "40288031527b7ad401527bc1d9b5000c"
+    },
+    {
+      "id": "40288031527b7ad401527bc1d9b5000c",
+      "type": "point",
+      "name": "金沙滩首站",
+      "pointType": "site",
+      "address": "金沙滩"
+    },
+    {
+      "type": "line",
+      "name": "金沙滩小峪口",
+      "startPid": "40288031527b7ad401527bc1d9b5000c",
+      "endPid": "40288031527bdf4c01527be7f8cc0003",
+      "piplength": "11"
+    },
+    {
+      "id": "40288031527bdf4c01527be7f8cc0003",
+      "type": "point",
+      "name": "小峪口阀室",
+      "pointType": "site",
+      "address": "金沙滩",
+      "downStreams": [
+        {
+          "id": "4028803152a567860152a5db500d0015",
+          "type": "point",
+          "name": "小峪口城网",
+          "pointType": "user",
+          "address": "小峪口",
+          "telephone": "777",
+          "contact": "是是是"
+        }
+      ]
+    },
+    {
+      "type": "line",
+      "name": "小峪口霸王",
+      "startPid": "40288031527bdf4c01527be7f8cc0003",
+      "endPid": "40288031527bdf4c01527bec7bf80004",
+      "piplength": "12"
+    },
+    {
+      "id": "40288031527bdf4c01527bec7bf80004",
+      "type": "point",
+      "name": "霸王店阀室",
+      "pointType": "site",
+      "address": "小峪口"
+    },
+    {
+      "type": "line",
+      "name": "霸王郝庄",
+      "startPid": "40288031527bdf4c01527bec7bf80004",
+      "endPid": "40288031527bdf4c01527c0e4ea70006",
+      "piplength": "12"
+    },
+    {
+      "id": "40288031527bdf4c01527c0e4ea70006",
+      "type": "point",
+      "name": "郝庄阀室",
+      "pointType": "site",
+      "address": "霸王",
+      "downStreams": [
+        {
+          "id": "4028803152a567860152a683e88a0024",
+          "type": "point",
+          "name": " 测试",
+          "pointType": "user",
+          "address": "大山地车",
+          "telephone": " 4444",
+          "contact": "333"
+        },
+        {
+          "id": "4028803152a567860152a5dcbecd0017",
+          "type": "point",
+          "name": "郝庄城网",
+          "pointType": "user",
+          "address": "郝庄",
+          "telephone": "999",
+          "contact": "快快快"
+        }
+      ]
+    },
+    {
+      "type": "line",
+      "name": "郝庄落里湾",
+      "startPid": "40288031527bdf4c01527c0e4ea70006",
+      "endPid": "40288031527bdf4c01527c0ef3a60007",
+      "piplength": "21"
+    },
+    {
+      "id": "40288031527bdf4c01527c0ef3a60007",
+      "type": "point",
+      "name": "落里湾末站",
+      "pointType": "site",
+      "address": "郝庄",
+      "downStreams": [
+        {
+          "id": "4028803152a567860152a5d954b90011",
+          "type": "point",
+          "name": "落里湾城网",
+          "pointType": "user",
+          "address": "落里湾",
+          "telephone": "9999",
+          "contact": "看看了"
+        },
+        {
+          "id": "4028803152a567860152a5da24010013",
+          "type": "point",
+          "name": "落里湾工业",
+          "pointType": "user",
+          "address": "落里湾",
+          "telephone": "888",
+          "contact": "来了"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": "40288031528086450152811b5ef20002",
+      "type": "point",
+      "name": "山西天然气管网",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152811b5ef20002",
+      "endPid": "40288031528086450152813a39f30003"
+    },
+    {
+      "id": "40288031528086450152813a39f30003",
+      "type": "point",
+      "name": "陕京一线",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152813a39f30003",
+      "endPid": "40288031527b7ad401527bc1d9b5000c"
+    },
+    {
+      "id": "40288031527b7ad401527bc1d9b5000c",
+      "type": "point",
+      "name": "金沙滩首站",
+      "pointType": "site",
+      "address": "金沙滩"
+    },
+    {
+      "type": "line",
+      "name": "金沙滩1#阀室",
+      "startPid": "40288031527b7ad401527bc1d9b5000c",
+      "endPid": "40288031527cd51801527cde0a040006",
+      "piplength": "12"
+    },
+    {
+      "id": "40288031527cd51801527cde0a040006",
+      "type": "point",
+      "name": "1#阀室",
+      "pointType": "site",
+      "address": "金沙滩"
+    },
+    {
+      "type": "line",
+      "name": "1#阀室2#阀室",
+      "startPid": "40288031527cd51801527cde0a040006",
+      "endPid": "40288031527cd51801527cde6a720007",
+      "piplength": "21"
+    },
+    {
+      "id": "40288031527cd51801527cde6a720007",
+      "type": "point",
+      "name": "2#阀室",
+      "pointType": "site",
+      "address": "山西"
+    },
+    {
+      "type": "line",
+      "name": "2#阀室3#阀室",
+      "startPid": "40288031527cd51801527cde6a720007",
+      "endPid": "40288031527cd51801527cded2e20008",
+      "piplength": "12"
+    },
+    {
+      "id": "40288031527cd51801527cded2e20008",
+      "type": "point",
+      "name": "3#阀室",
+      "pointType": "site",
+      "address": "山西"
+    },
+    {
+      "type": "line",
+      "name": "3#阀室4#阀室",
+      "startPid": "40288031527cd51801527cded2e20008",
+      "endPid": "40288031527cd51801527cdf58ca0009",
+      "piplength": "12"
+    },
+    {
+      "id": "40288031527cd51801527cdf58ca0009",
+      "type": "point",
+      "name": "4#阀室",
+      "pointType": "site",
+      "address": "山西"
+    },
+    {
+      "type": "line",
+      "name": "4#阀室5#阀室",
+      "startPid": "40288031527cd51801527cdf58ca0009",
+      "endPid": "40288031527cd51801527cdfd308000a",
+      "piplength": "11"
+    },
+    {
+      "id": "40288031527cd51801527cdfd308000a",
+      "type": "point",
+      "name": "5#阀室",
+      "pointType": "site",
+      "address": "山西"
+    },
+    {
+      "type": "line",
+      "name": "5#阀室6#阀室",
+      "startPid": "40288031527cd51801527cdfd308000a",
+      "endPid": "40288031527cd51801527ce03510000b",
+      "piplength": "12"
+    },
+    {
+      "id": "40288031527cd51801527ce03510000b",
+      "type": "point",
+      "name": "6#阀室",
+      "pointType": "site",
+      "address": "山西"
+    }
+  ],
+  [
+    {
+      "id": "40288031528086450152811b5ef20002",
+      "type": "point",
+      "name": "山西天然气管网",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152811b5ef20002",
+      "endPid": "40288031528086450152813a39f30003"
+    },
+    {
+      "id": "40288031528086450152813a39f30003",
+      "type": "point",
+      "name": "陕京一线",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152813a39f30003",
+      "endPid": "40288031527cd51801527ce10c83000c"
+    },
+    {
+      "id": "40288031527cd51801527ce10c83000c",
+      "type": "point",
+      "name": "神池首站",
+      "pointType": "site",
+      "address": "山西"
+    },
+    {
+      "type": "line",
+      "name": "神池阳方口",
+      "startPid": "40288031527cd51801527ce10c83000c",
+      "endPid": "40288031527cd51801527ce9233c0015",
+      "piplength": "11"
+    },
+    {
+      "id": "40288031527cd51801527ce9233c0015",
+      "type": "point",
+      "name": "阳方口分输站",
+      "pointType": "site",
+      "address": "山西",
+      "downStreams": [
+        {
+          "id": "4028803152a567860152a5e73a7b0021",
+          "type": "point",
+          "name": "阳方口耐火厂",
+          "pointType": "user",
+          "address": "阳方口",
+          "telephone": "7788",
+          "contact": "哟哟哟"
+        },
+        {
+          "id": "4028803152a567860152a5e617ff001f",
+          "type": "point",
+          "name": "阳方口城网",
+          "pointType": "user",
+          "address": "阳方口",
+          "telephone": "6666",
+          "contact": "烦烦烦"
+        }
+      ]
+    },
+    {
+      "type": "line",
+      "name": "阳方口张家嘴",
+      "startPid": "40288031527cd51801527ce9233c0015",
+      "endPid": "40288031527cd51801527ce9b1020016",
+      "piplength": "11"
+    },
+    {
+      "id": "40288031527cd51801527ce9b1020016",
+      "type": "point",
+      "name": "张家嘴阀室",
+      "pointType": "site",
+      "address": "山西"
+    },
+    {
+      "type": "line",
+      "name": "张家嘴",
+      "startPid": "40288031527cd51801527ce9b1020016",
+      "endPid": "40288031527cd51801527cea4f030017",
+      "piplength": "12"
+    },
+    {
+      "id": "40288031527cd51801527cea4f030017",
+      "type": "point",
+      "name": "保全庄阀室",
+      "pointType": "site",
+      "address": "山西",
+      "downStreams": [
+        {
+          "id": "4028803152a567860152a5de78290019",
+          "type": "point",
+          "name": "保全庄城网",
+          "pointType": "user",
+          "address": "保全庄",
+          "telephone": "9988",
+          "contact": "客户"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": "40288031528086450152811b5ef20002",
+      "type": "point",
+      "name": "山西天然气管网",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152811b5ef20002",
+      "endPid": "40288031528086450152813a39f30003"
+    },
+    {
+      "id": "40288031528086450152813a39f30003",
+      "type": "point",
+      "name": "陕京一线",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152813a39f30003",
+      "endPid": "40288031527cd51801527ce10c83000c"
+    },
+    {
+      "id": "40288031527cd51801527ce10c83000c",
+      "type": "point",
+      "name": "神池首站",
+      "pointType": "site",
+      "address": "山西"
+    },
+    {
+      "type": "line",
+      "name": "神池庄儿上",
+      "startPid": "40288031527cd51801527ce10c83000c",
+      "endPid": "40288031527cd51801527ceae4a10018",
+      "piplength": "11"
+    },
+    {
+      "id": "40288031527cd51801527ceae4a10018",
+      "type": "point",
+      "name": "庄儿上阀室",
+      "pointType": "site",
+      "address": "山西"
+    },
+    {
+      "type": "line",
+      "name": "庄儿上五寨",
+      "startPid": "40288031527cd51801527ceae4a10018",
+      "endPid": "40288031527cd51801527ceb937f0019",
+      "piplength": "11"
+    },
+    {
+      "id": "40288031527cd51801527ceb937f0019",
+      "type": "point",
+      "name": "五寨分输站",
+      "pointType": "site",
+      "address": "山西",
+      "downStreams": [
+        {
+          "id": "4028803152a567860152a5df1831001b",
+          "type": "point",
+          "name": "五寨航天",
+          "pointType": "user",
+          "address": "五寨",
+          "telephone": "777",
+          "contact": "哈哈哈"
+        },
+        {
+          "id": "4028803152a567860152a5e48526001d",
+          "type": "point",
+          "name": "五寨城网",
+          "pointType": "user",
+          "address": "五寨",
+          "telephone": "8888",
+          "contact": "积极"
+        }
+      ]
+    },
+    {
+      "type": "line",
+      "name": "五寨阎家窊",
+      "startPid": "40288031527cd51801527ceb937f0019",
+      "endPid": "40288031527cd51801527ced0744001a",
+      "piplength": "11"
+    },
+    {
+      "id": "40288031527cd51801527ced0744001a",
+      "type": "point",
+      "name": "阎家窊阀室",
+      "pointType": "site",
+      "address": "山西"
+    },
+    {
+      "type": "line",
+      "name": "阎家窊三井",
+      "startPid": "40288031527cd51801527ced0744001a",
+      "endPid": "40288031527cd51801527ced9461001b",
+      "piplength": "12"
+    },
+    {
+      "id": "40288031527cd51801527ced9461001b",
+      "type": "point",
+      "name": "三井阀室",
+      "pointType": "site",
+      "address": "山西"
+    },
+    {
+      "type": "line",
+      "name": "三井岢岚",
+      "startPid": "40288031527cd51801527ced9461001b",
+      "endPid": "40288031527cd51801527cee24fe001c",
+      "piplength": "12"
+    },
+    {
+      "id": "40288031527cd51801527cee24fe001c",
+      "type": "point",
+      "name": "岢岚分输站",
+      "pointType": "site",
+      "address": "山西"
+    }
+  ],
+  [
+    {
+      "id": "40288031528086450152811b5ef20002",
+      "type": "point",
+      "name": "山西天然气管网",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152811b5ef20002",
+      "endPid": "40288031528086450152813a39f30003"
+    },
+    {
+      "id": "40288031528086450152813a39f30003",
+      "type": "point",
+      "name": "陕京一线",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152813a39f30003",
+      "endPid": "40288031527cd51801527ce10c83000c"
+    },
+    {
+      "id": "40288031527cd51801527ce10c83000c",
+      "type": "point",
+      "name": "神池首站",
+      "pointType": "site",
+      "address": "山西"
+    },
+    {
+      "type": "line",
+      "name": "神池余庄子",
+      "startPid": "40288031527cd51801527ce10c83000c",
+      "endPid": "40288031527cd51801527ce19cf3000d",
+      "piplength": "11"
+    },
+    {
+      "id": "40288031527cd51801527ce19cf3000d",
+      "type": "point",
+      "name": "余庄子阀室",
+      "pointType": "site",
+      "address": "山西"
+    },
+    {
+      "type": "line",
+      "name": "余庄子仁义",
+      "startPid": "40288031527cd51801527ce19cf3000d",
+      "endPid": "40288031527cd51801527ce22746000e",
+      "piplength": "11"
+    },
+    {
+      "id": "40288031527cd51801527ce22746000e",
+      "type": "point",
+      "name": "仁义阀室",
+      "pointType": "site",
+      "address": "山西"
+    },
+    {
+      "type": "line",
+      "name": "仁义三岔",
+      "startPid": "40288031527cd51801527ce22746000e",
+      "endPid": "40288031527cd51801527ce2bdde000f",
+      "piplength": "11"
+    },
+    {
+      "id": "40288031527cd51801527ce2bdde000f",
+      "type": "point",
+      "name": "三岔分输站",
+      "pointType": "site",
+      "address": "山西",
+      "downStreams": [
+        {
+          "id": "4028803152a567860152a5c6f18a000f",
+          "type": "point",
+          "name": "三岔LNG液化",
+          "pointType": "user",
+          "address": "三岔",
+          "telephone": "99999",
+          "contact": "看看"
+        }
+      ]
+    },
+    {
+      "type": "line",
+      "name": "三岔孙家梁",
+      "startPid": "40288031527cd51801527ce2bdde000f",
+      "endPid": "40288031527cd51801527ce4aede0010",
+      "piplength": "11"
+    },
+    {
+      "id": "40288031527cd51801527ce4aede0010",
+      "type": "point",
+      "name": "孙家梁阀室",
+      "pointType": "site",
+      "address": "山西"
+    },
+    {
+      "type": "line",
+      "name": "孙家梁前红崖",
+      "startPid": "40288031527cd51801527ce4aede0010",
+      "endPid": "40288031527cd51801527ce5366d0011",
+      "piplength": "11"
+    },
+    {
+      "id": "40288031527cd51801527ce5366d0011",
+      "type": "point",
+      "name": "前红崖阀室",
+      "pointType": "site",
+      "address": "山西"
+    },
+    {
+      "type": "line",
+      "name": "前红崖桥头",
+      "startPid": "40288031527cd51801527ce5366d0011",
+      "endPid": "40288031527cd51801527ce625830012",
+      "piplength": "22"
+    },
+    {
+      "id": "40288031527cd51801527ce625830012",
+      "type": "point",
+      "name": "桥头阀室",
+      "pointType": "site",
+      "address": "山西"
+    },
+    {
+      "type": "line",
+      "name": "桥头保德",
+      "startPid": "40288031527cd51801527ce625830012",
+      "endPid": "40288031527cd51801527ce7a0a00013",
+      "piplength": "11"
+    },
+    {
+      "id": "40288031527cd51801527ce7a0a00013",
+      "type": "point",
+      "name": "保德首站",
+      "pointType": "site",
+      "address": "山西"
+    },
+    {
+      "type": "line",
+      "name": "保德保二",
+      "startPid": "40288031527cd51801527ce7a0a00013",
+      "endPid": "40288031527cd51801527ce84f330014",
+      "piplength": "12"
+    },
+    {
+      "id": "40288031527cd51801527ce84f330014",
+      "type": "point",
+      "name": "保二站",
+      "pointType": "site",
+      "address": "山西"
+    }
+  ],
+  [
+    {
+      "id": "40288031528086450152811b5ef20002",
+      "type": "point",
+      "name": "山西天然气管网",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152811b5ef20002",
+      "endPid": "40288031528086450152813a39f30003"
+    },
+    {
+      "id": "40288031528086450152813a39f30003",
+      "type": "point",
+      "name": "陕京一线",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152813a39f30003",
+      "endPid": "40288031527b7ad401527bc074fd000b"
+    },
+    {
+      "id": "40288031527b7ad401527bc074fd000b",
+      "type": "point",
+      "name": "灵丘首站",
+      "pointType": "site",
+      "address": "灵丘市",
+      "downStreams": [
+        {
+          "id": "402880315281a8220152820200ea0006",
+          "type": "point",
+          "name": "灵丘华润",
+          "pointType": "user",
+          "address": "灵丘",
+          "telephone": "1233",
+          "contact": "来了"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": "40288031528086450152811b5ef20002",
+      "type": "point",
+      "name": "山西天然气管网",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152811b5ef20002",
+      "endPid": "40288031528086450152813c13a90004"
+    },
+    {
+      "id": "40288031528086450152813c13a90004",
+      "type": "point",
+      "name": "陕京二线",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152813c13a90004",
+      "endPid": "4028803c52f1fa920152f2009ba90001"
+    },
+    {
+      "id": "4028803c52f1fa920152f2009ba90001",
+      "type": "point",
+      "name": "盂县首站",
+      "pointType": "site",
+      "address": "盂县"
+    },
+    {
+      "type": "line",
+      "name": "盂县峪头阀室",
+      "startPid": "4028803c52f1fa920152f2009ba90001",
+      "endPid": "4028803c52f1fa920152f26c779c0005",
+      "piplength": "10"
+    },
+    {
+      "id": "4028803c52f1fa920152f26c779c0005",
+      "type": "point",
+      "name": "马举阀室",
+      "pointType": "site",
+      "address": "盂县"
+    },
+    {
+      "type": "line",
+      "name": "马举解愁",
+      "startPid": "4028803c52f1fa920152f26c779c0005",
+      "endPid": "4028803c52f1fa920152f26f26e10007",
+      "piplength": "12"
+    },
+    {
+      "id": "4028803c52f1fa920152f26f26e10007",
+      "type": "point",
+      "name": "解愁阀室",
+      "pointType": "site",
+      "address": "马举"
+    },
+    {
+      "type": "line",
+      "name": "解愁寿阳",
+      "startPid": "4028803c52f1fa920152f26f26e10007",
+      "endPid": "4028803c52f1fa920152f27092d50009",
+      "piplength": "10"
+    },
+    {
+      "id": "4028803c52f1fa920152f27092d50009",
+      "type": "point",
+      "name": "寿阳分输站",
+      "pointType": "site",
+      "address": "解愁",
+      "downStreams": [
+        {
+          "id": "4028803c52f2ff0e0152f37db9b4000e",
+          "type": "point",
+          "name": "寿阳热电",
+          "pointType": "user",
+          "address": "寿阳",
+          "telephone": "03429910221",
+          "contact": "马经理"
+        },
+        {
+          "id": "4028803c52f2ff0e0152f37cf4e4000c",
+          "type": "point",
+          "name": "寿阳液化",
+          "pointType": "user",
+          "address": "寿阳",
+          "telephone": "03429988122",
+          "contact": "张经理"
+        }
+      ]
+    },
+    {
+      "type": "line",
+      "name": "寿阳辛家庄",
+      "startPid": "4028803c52f1fa920152f27092d50009",
+      "endPid": "4028803c52f1fa920152f271ddd9000a",
+      "piplength": "19"
+    },
+    {
+      "id": "4028803c52f1fa920152f271ddd9000a",
+      "type": "point",
+      "name": "辛家庄阀室",
+      "pointType": "site",
+      "address": "寿阳"
+    },
+    {
+      "type": "line",
+      "name": "辛家庄峪头",
+      "startPid": "4028803c52f1fa920152f271ddd9000a",
+      "endPid": "4028803c52f1fa920152f2730e53000b",
+      "piplength": "10"
+    },
+    {
+      "id": "4028803c52f1fa920152f2730e53000b",
+      "type": "point",
+      "name": "峪头阀室",
+      "pointType": "site",
+      "address": "辛家庄",
+      "downStreams": [
+        {
+          "id": "4028803c52f2ff0e0152f37f3ae80010",
+          "type": "point",
+          "name": "榆次城市管网",
+          "pointType": "user",
+          "address": "榆次",
+          "telephone": "03519988112",
+          "contact": "李经理"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": "40288031528086450152811b5ef20002",
+      "type": "point",
+      "name": "山西天然气管网",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152811b5ef20002",
+      "endPid": "40288031528086450152813c13a90004"
+    },
+    {
+      "id": "40288031528086450152813c13a90004",
+      "type": "point",
+      "name": "陕京二线",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152813c13a90004",
+      "endPid": "4028803c52f1fa920152f2009ba90001"
+    },
+    {
+      "id": "4028803c52f1fa920152f2009ba90001",
+      "type": "point",
+      "name": "盂县首站",
+      "pointType": "site",
+      "address": "盂县"
+    },
+    {
+      "type": "line",
+      "name": "盂县首站苗圃阀室",
+      "startPid": "4028803c52f1fa920152f2009ba90001",
+      "endPid": "4028803c52f1fa920152f201c2050002",
+      "piplength": "12"
+    },
+    {
+      "id": "4028803c52f1fa920152f201c2050002",
+      "type": "point",
+      "name": "苗圃阀室",
+      "pointType": "site",
+      "address": "盂县"
+    },
+    {
+      "type": "line",
+      "name": "苗圃盂县门站",
+      "startPid": "4028803c52f1fa920152f201c2050002",
+      "endPid": "4028803c52f1fa920152f26a945c0004",
+      "piplength": "9"
+    },
+    {
+      "id": "4028803c52f1fa920152f26a945c0004",
+      "type": "point",
+      "name": "盂县门站",
+      "pointType": "site",
+      "address": "苗圃"
+    }
+  ],
+  [
+    {
+      "id": "40288031528086450152811b5ef20002",
+      "type": "point",
+      "name": "山西天然气管网",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152811b5ef20002",
+      "endPid": "40288031528086450152813c13a90004"
+    },
+    {
+      "id": "40288031528086450152813c13a90004",
+      "type": "point",
+      "name": "陕京二线",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152813c13a90004",
+      "endPid": "4028803c52f1fa920152f2009ba90001"
+    },
+    {
+      "id": "4028803c52f1fa920152f2009ba90001",
+      "type": "point",
+      "name": "盂县首站",
+      "pointType": "site",
+      "address": "盂县"
+    },
+    {
+      "type": "line",
+      "name": "盂县东沟",
+      "startPid": "4028803c52f1fa920152f2009ba90001",
+      "endPid": "4028803c52f1fa920152f2748fc2000c",
+      "piplength": "12"
+    },
+    {
+      "id": "4028803c52f1fa920152f2748fc2000c",
+      "type": "point",
+      "name": "东沟阀室",
+      "pointType": "site",
+      "address": "盂县"
+    },
+    {
+      "type": "line",
+      "name": "东沟韩庄",
+      "startPid": "4028803c52f1fa920152f2748fc2000c",
+      "endPid": "4028803c52f1fa920152f2754970000d",
+      "piplength": "12"
+    },
+    {
+      "id": "4028803c52f1fa920152f2754970000d",
+      "type": "point",
+      "name": "韩庄阀室",
+      "pointType": "site",
+      "address": "东沟"
+    }
+  ],
+  [
+    {
+      "id": "40288031528086450152811b5ef20002",
+      "type": "point",
+      "name": "山西天然气管网",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152811b5ef20002",
+      "endPid": "40288031528086450152813c13a90004"
+    },
+    {
+      "id": "40288031528086450152813c13a90004",
+      "type": "point",
+      "name": "陕京二线",
+      "pointType": "site"
+    },
+    {
+      "type": "line",
+      "name": "管线",
+      "startPid": "40288031528086450152813c13a90004",
+      "endPid": "4028803c52f2ff0e0152f3957a5f0012"
+    },
+    {
+      "id": "4028803c52f2ff0e0152f3957a5f0012",
+      "type": "point",
+      "name": "岚县首站",
+      "pointType": "site",
+      "address": "岚县"
+    }
+  ]
+]
