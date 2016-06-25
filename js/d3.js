@@ -7142,9 +7142,7 @@
       node.y = node.depth * size[1];
     }
     tree.separation = function(x) {
-      if (!arguments.length) return separation;
-      separation = x;
-      return tree;
+      return arguments.length ? (separation = x, tree) : separation;
     };
     tree.size = function(x) {
       if (!arguments.length) return nodeSize ? null : size;

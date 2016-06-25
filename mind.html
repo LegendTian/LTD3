@@ -30,10 +30,11 @@
 <body>
 <div id="popdiv"></div>
 <script src="js/d3.min.js"></script>
+<script src="js/jquery-1.12.3.min.js"></script>
 <script>
 
-    var width = 1200;
-    var height = 600;
+    var width = $(document).width()*0.9;
+    var height = $(document).height()*0.9;
 
     //边界空白
     var padding = {left: 100, right:50, top: 20, bottom: 20 };
@@ -81,7 +82,7 @@
             var links = tree.links(nodes);
 
             //重新计算节点的y坐标
-            nodes.forEach(function(d) { d.y = d.depth * 180; });
+            nodes.forEach(function(d) { d.y = d.depth * width/11; });
 
             /*
              （2） 节点的处理
