@@ -21,6 +21,11 @@
             stroke: #ccc;
             stroke-width: 1.5px;
         }
+        .line {
+            fill: none;
+            stroke: #ccc;
+            stroke-width: 1.5px;
+        }
         #popdiv{
             position: absolute;
             display: none;
@@ -51,7 +56,7 @@
             .size([height, width])
             .separation(function(a,b){
                 //return a.parent == b.parent ? "兄弟节点间隔" : 父子节点间隔;
-                console.log(a,b);
+                //console.log(a,b);
                 return a.parent == b.parent ? 1 : 1;
                 //return (a.parent == b.parent ? 1 : 2) / a.depth;
             });
@@ -61,8 +66,11 @@
             .projection(function(d) { return [d.y, d.x]; });
 
     var pop=document.getElementById("popdiv");
+    var line = d3.svg.line();
+    line.interpolate(["basis"]);
+
     d3.json("data/lineloop.json",function(error,root){
-        console.log(root);
+
         //给第一个节点添加初始坐标x0和x1
         root.x0 = height / 2;
         root.y0 = 0;
@@ -72,7 +80,7 @@
 
         //重绘函数
         function redraw(source){
-
+            console.log("root",root);
             /*
              （1） 计算节点和连线的位置
              */
@@ -80,6 +88,13 @@
             //应用布局，计算节点和连线
             var nodes = tree.nodes(root);
             var links = tree.links(nodes);
+            console.log("nodes",nodes);
+            console.log("links",links);
+
+            var newLink={source:nodes[60],target:nodes[69]};
+            console.log(newLink);
+            //links.push(newLink);
+            console.log(links);
 
             //重新计算节点的y坐标
             nodes.forEach(function(d) { d.y = d.depth * width/11; });
@@ -144,11 +159,13 @@
              （3） 连线的处理
              */
 
+
+
             //获取连线的update部分
             var linkUpdate = svg.selectAll(".link")
                     .data(links, function(d){ return d.target.name; })
                     ;
-
+            console.log("linkUpdate",linkUpdate);
             //获取连线的enter部分
             var linkEnter = linkUpdate.enter();
 
@@ -167,6 +184,18 @@
                     .duration(500)
                     .attr("d", diagonal);
 
+            /*linkEnter.insert("path",".node")
+                    .attr("class", "line")
+                    .attr("d", function(d) {
+                        return diagonal({source: newLink.source, target: newLink.target});
+                    })
+
+                    .transition()
+                    .duration(500)
+                    .attr("d", function(d) {
+                        return diagonal({source: newLink.source, target: newLink.target});
+                    });*/
+
             //2. 连线的 Update 部分的处理办法
             linkUpdate.transition()
                     .duration(500)
@@ -181,6 +210,18 @@
                     })
                     .remove();
 
+            /*linkExit.transition()
+                    .duration(500)
+                    .attr("d", function(d) {
+                        return diagonal({source: newLink.source, target: newLink.target});
+                    })
+                    .remove();*/
+
+            var path = svg.append('path')
+                    .attr('class', 'line')
+                    .attr("d", function(d) {
+                        return diagonal({source: newLink.source, target: newLink.target});
+                    });
 
             /*
              （4） 将当前的节点坐标保存在变量x0、y0里，以备更新时使用
